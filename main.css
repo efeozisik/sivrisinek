@@ -1,0 +1,73 @@
+body {
+    background-color: aqua;
+}
+
+div {
+    border: 2px solid gray;
+    margin: 10px;
+    padding: 10px;
+    height: 50px;
+}
+
+@keyframes ornek {
+    0% {background-color: red;}
+    25% {background-color: aliceblue;}
+    50% {background-color: yellow}
+    100% {background-color: green;}
+}
+
+.ozel-div {
+    background-color: azure;
+    animation-name: ornek;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    border-radius: 50%;
+    box-shadow: 10px 20px 10px  royalblue, -5px -10px 5px rosybrown;
+}
+
+.ozel-div-tek {
+    animation: ornek 5s linear 2s 2 alternate;
+    border-radius: 20px/50%;
+    column-span: all;
+}
+
+.ozel-div-border {
+    border-radius: 10px 20px 30px 40px;
+    border: 20px solid yellow;
+    box-shadow: border-box; 
+    column-width: 100px;
+    /* padding + width + border genislik */
+    /* padding + height + border  yukseklik */
+
+
+}
+
+.ozel-div-border-iki:hover {
+    border-radius: 10px 20px;
+    column-rule: 1px solid gray;
+    column-gap: 20px;
+    column-count: 2;
+    column-span: all;
+    opacity: 0.5;
+}
+
+.yazi-bolme-div {
+    column-count: 2;
+    column-gap: 10px;
+    column-rule-style: solid;
+    column-rule-width: 5px;
+    column-rule-color: antiquewhite;
+    text-shadow: 1px 2px 1px red;
+
+}
+
+.boyutlandirma {
+    border: 2px solid gold;
+    padding: 20px;
+    width: 300px;
+    resize: horizontal;
+    overflow: auto;
+}
